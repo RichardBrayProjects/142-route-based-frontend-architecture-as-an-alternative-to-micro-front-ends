@@ -1,0 +1,16 @@
+{
+  "name": "@toy/ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "echo ui ready",
+    "package-cleanup": "rm -rf node_modules dist"
+  },
+  "dependencies": {
+    "react": "^19.1.0"
+  }
+}

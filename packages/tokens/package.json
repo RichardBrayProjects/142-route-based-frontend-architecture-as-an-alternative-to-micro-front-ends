@@ -1,0 +1,12 @@
+{
+  "name": "@toy/tokens",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    "./tokens.css": "./src/tokens.css"
+  },
+  "scripts": {
+    "build": "echo tokens ready",
+    "package-cleanup": "rm -rf node_modules dist"
+  }
+}

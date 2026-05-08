@@ -1,0 +1,20 @@
+{
+  "name": "@toy/cdk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cdk": "cdk",
+    "build": "tsc",
+    "package-cleanup": "rm -rf node_modules cdk.out dist"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.191.0",
+    "constructs": "^10.4.2"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2.1013.0",
+    "typescript": "^5.8.3",
+    "tsx": "^4.19.4"
+  }
+}

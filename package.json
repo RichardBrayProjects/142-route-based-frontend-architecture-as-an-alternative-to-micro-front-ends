@@ -1,0 +1,24 @@
+{
+  "name": "toy-vite-multi-app-root",
+  "private": true,
+  "scripts": {
+    "dev:shell": "pnpm -F @toy/shell dev",
+    "dev:admin": "pnpm -F @toy/admin dev",
+    "dev:billing": "pnpm -F @toy/billing dev",
+    "dev:dashboard": "pnpm -F @toy/dashboard dev",
+    "build": "pnpm -r --filter './packages/*' --filter './apps/*' build",
+    "build:shell": "pnpm -F @toy/shell build",
+    "build:admin": "pnpm -F @toy/admin build",
+    "build:billing": "pnpm -F @toy/billing build",
+    "build:dashboard": "pnpm -F @toy/dashboard build",
+    "cdk:deploy": "pnpm -F @toy/cdk cdk deploy",
+    "deploy:shell": "bash scripts/deploy-app.sh shell",
+    "deploy:admin": "bash scripts/deploy-app.sh admin",
+    "deploy:billing": "bash scripts/deploy-app.sh billing",
+    "deploy:dashboard": "bash scripts/deploy-app.sh dashboard",
+    "package-cleanup": "pnpm -r run package-cleanup && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
